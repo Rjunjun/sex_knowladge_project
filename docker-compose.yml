@@ -1,0 +1,8 @@
+web:
+ build: .
+ command: python -u app.py
+ ports:
+  - "8069:80"
+ volumes:
+  - .:/analysis
+ restart: on-failure
